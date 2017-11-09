@@ -1,0 +1,9 @@
+.App {
+  background: lightgrey;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  perspective: 1;
+  overflow: hidden;
+  font-family: 'Crimson Text', serif;
+}

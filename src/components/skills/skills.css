@@ -1,0 +1,25 @@
+.skillslist {
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ 
+}
+
+.topbox{
+    flex-direction: row;
+
+}
+
+.bottombox {
+    flex-direction: row;
+}
+
+.image {
+    /* height: 120px;
+    width: 120px; */
+    color: darkblue;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 35px;
+    font-family: Courier New, Courier, monospace
+}

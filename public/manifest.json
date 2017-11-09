@@ -1,0 +1,15 @@
+{
+  "short_name": "Anthony Caccavella",
+  "name": "Anthony Caccavella Web Portfolio",
+  "icons": [
+    {
+      "src": "https://image.ibb.co/nj2acb/picture.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
