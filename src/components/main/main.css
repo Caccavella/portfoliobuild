@@ -9,11 +9,6 @@
     background-attachment: fixed;
     /* filter: blur(1px); */
 }
-.topimage h1 {
-    height: 70px;
-    width: 50vw;
-    filter: blur(0);
-}
 
 .heading {
     height: 60px;
@@ -32,10 +27,6 @@
     height: 100%;
     justify-content: flex-start;
     flex-direction: row;
-}
-
-.headingleft nav{
-
 }
 
 .navigation {
@@ -128,7 +119,7 @@
     margin-top: 150px;
     font-size: 50px;
     margin-left: 20%;
-    
+    font-weight: bold;
 }
 
 .aboutparagraph {
@@ -140,11 +131,15 @@
 }
 
 .name {
-    position: absolute;
-    transform: translateY(-100vh);
-    font-size: 90px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 85px;
     color: #f9f9f9;
+    padding-top: 30vh;
     margin-left: 25%;
+    /* transform: translateX(-35%); */
 }
 
 .name h1 {
@@ -153,21 +148,26 @@
 
 .name h3 {
     margin-top: 10px;
-    font-size: 30px;
-    margin-left: 42%;
-    color: #94A3BA;
+    font-size: 28px;
+    color: #f9f9f9;
+    margin-left: 35%;
 }
 
 .projectscontainer {
-    height: 525px;
+    height: 570px;
     width: 100vw;
     background: rgb(165, 181, 207);
     border-top: 1px solid rgba(0,0,0,.7);
+    justify-content: space-around;
+    flex-direction: row;
 }
 .projectscontainer h1 {
     font-size: 50px;
     margin-left: 42vw;
     padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    margin-left: 20vw;
 }
 
 .projectimage {
@@ -195,11 +195,21 @@
     zoom: 19.2%;
     background-repeat: no-repeat;
 }
+.projectimage3 {
+    background-image: url('./Tepanyaki home page.PNG');
+    background-position: center;
+    background-size: fill;
+    zoom: 19.2%;
+    background-repeat: no-repeat;
+    height: 50%;
+    box-shadow: 0px 0px 4px rgba(0,0,0,.7);
+    width: 90%;
+}
 
-.project1 {
+.project {
     height: 80%;
-    width: 400px;
-    margin-left: 280px;
+    width: 20vw;
+    margin-left: 10vw;
     margin-top: 10px;
     background: white;
     box-shadow: 0px 0px 4px rgba(0,0,0,.7);
@@ -226,13 +236,24 @@
 
 .project2 {
     height: 80%;
-    width: 400px;
+    width: 38vw;
     float: right;
-    margin-right: 280px;
-    /* margin-top: 10px; */
+    margin-right: 8vw;
+    margin-left: 3vw;
     background: white;
     box-shadow: 0px 0px 4px rgba(0,0,0,.7);
-    transform: translateY(-100%);
+
+}
+
+.project3 {
+    height: 80%;
+    width: 38vw;
+    float: right;
+    margin-right: 8vw;
+    margin-left: 3vw;
+    background: white;
+    box-shadow: 0px 0px 4px rgba(0,0,0,.7);
+
 }
 
 .skills {
@@ -250,12 +271,11 @@
 
 .skilltitle {
     display: flex;
-    align-content: center;
-    justify-content: center;
     color: white;
-    font-size: 40px;
     font-weight: bold;
     padding-top: 15px;
+    font-size: 50px;
+    margin-left: 20vw;
 } 
 
 .skill-list {
@@ -293,11 +313,11 @@
 }
 
 .contactinfo h2 {
-    font-size: 20px;
-    padding-left: 10vw;
+    font-size: 50px;
     margin-top: 20px;
     margin-bottom: 90px;
     margin-left: 20vw;
+    font-weight: bold;
 }
 .contactinfo h4 {
     font-size: 15px;
@@ -379,11 +399,10 @@
 
 @media(min-width: 450px) {
     .contactinfo h2 {
-        font-size: 35px;
-        padding-left: 10vw;
+        font-size: 50px;
         margin-top: 50px;
         color: #f9f9f9;
-        font-weight: bold;
+
     }
     .contactform h2 {
         font-size: 35px;
@@ -395,6 +414,7 @@
     .contactdetails {
         margin-top: 100px;
         color: #f9f9f9;
+        margin-left: 10vw;
     }
     .forminfo {
         margin-top: 55px;
@@ -415,35 +435,42 @@
         padding-left: 12vw;
         margin-top: 15px;
     }
+    .skill-list {
+        font-size: 20px;
+    }
 }
 
-@media(min-width: 1201px) {
+@media(min-width: 650px) {
+    .project2 {
+        transform: translateY(-100%);
+    }
+}
+
+@media(max-width: 650px) {
     .project1 {
-        /* transform: translateX(-45%); */
+        display: none;
     }
     .project2 {
-        /* transform: translateX(75%, -100%); */
+        width: 80vw;
+        height: 50vh;
     }
-} 
+
+}
+
+@media(max-width: 775px) {
+    .projectscontainer h3 {
+        font-size: 16px;
+    }
+    .projectscontainer h5 {
+        font-size: 14px;
+    }
+}
 
 @media(max-width: 1200px) {
     .projectscontainer {
     }
     .projectscontainer h1 {
-        font-size: 30px;
-        transform: translateX(-10%);
-        
-    }
-    .project1 {
-        transform: translateX(-64vw);
-        width: 80vw;
-        display: none;
-    }
-    .project2 {
-        transform: translate(36.5vh);
-        width: 80vw;
-        margin-top: 20px;
-        padding-bottom: 10px;
+        font-size: 50px;
     }
     .aboutparagraph{
         font-size: 20px;
@@ -451,14 +478,19 @@
         margin-left: 15vw;
     }
     .picture {
-        transform: translate(-25vw, -50%);
+        margin-left: 50%;
+        transform: translate(-50%, -50%)
     }
     .name {
-        font-size: 30px;
-        transform: translateY(-175vh);
+        font-size: 40px;
+        margin-left: 50%;
+        transform: translateX(-25%);
+    }
+    .name h3 {
+        font-size: 25px;
     }
     .skilltitle{
-        margin-left: 180px;
+        /* margin-left: 180px; */
     }
     .lowerdownload{
         margin-left: 90px;

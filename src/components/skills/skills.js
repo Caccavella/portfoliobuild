@@ -1,17 +1,6 @@
 import React from 'react';
 import './skills.css';
-// import aframe from '../images/aframe.png';
-// import es6 from '../images/es6.png';
-// import express from '../images/expressjs.png';
-// import html from '../images/html5.png';
-// import rechart from '../images/Logomakr_07HQGI.png';
-// import css from '../images/MCSS3.png';
-// import mui from '../images/mui.png';
-// import node from '../images/nodejs.svg';
-// import post from '../images/postgres.png';
-// import reacta from '../images/react.png';
-// import redux from '../images/redux';
-// import rest from '../images/REST-API.png';
+
 
 
 var Skills = () => {
